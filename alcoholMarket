@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Alcohol_Market {
+    public static void main(String[] args) {
+        Scanner console = new Scanner( System.in );
+        //Insert price whiskey,beer,wine,rakiq
+        double whiskey = Double.parseDouble( console.next() );
+        double beer = Double.parseDouble( console.next() );
+        double wine = Double.parseDouble( console.next() );
+        double rakiq = Double.parseDouble( console.next() );
+        double litriwhiskey = Double.parseDouble( console.next() );
+        ////kruchmarski smetki....
+        double sumrakiq = (whiskey / 2 );
+        double sumwine = sumrakiq - (0.4 * sumrakiq);
+        double sumbeer = sumrakiq - (0.8 * sumrakiq);
+        double sumwhiskey = litriwhiskey*whiskey;
+        double result = (sumrakiq*rakiq) + (sumwine*wine) + (sumbeer*beer) + sumwhiskey;
+        System.out.printf("%.2f",result);
+
+
+    }
+    }
+
